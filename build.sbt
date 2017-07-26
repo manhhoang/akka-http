@@ -1,4 +1,4 @@
-name := "akka-http"
+name := "learn-akka-http"
 
 version := "0.1-SNAPSHOT"
 
@@ -38,7 +38,10 @@ libraryDependencies ++= {
 
     "com.typesafe.akka" %% "akka-testkit" % akkaVersion % "test",
     "org.scalatest" %% "scalatest" % "2.2.4" % "test",
+    "org.scalamock" %% "scalamock-scalatest-support" % "3.5.0" % Test,
+
     "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % "test",
-    "ru.yandex.qatools.embed" % "postgresql-embedded" % "1.15" % "test"
+    "ru.yandex.qatools.embed" % "postgresql-embedded" % "1.15" % "test",
+    "com.typesafe.play" %% "play-json" % "2.6.0-M6"
   )
 }
